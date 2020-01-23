@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Appointments";
+}
+
+<h1>Appointments</h1>
+<p> Please view below for your previous and upcoming appointments. </p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Appointment
+            </th>
+            <th>
+                Date
+            </th>
+            <th>
+                Time
+            </th>
+            <th>
+                Primary Care Provider
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>
+                    New Patient 
+                </td>
+                <td>
+                    March 3, 2020
+                </td>
+                <td>
+                    10:30am
+                </td>
+                <td>
+                    Dr.Barber
+                </td>
+                <td>
+                    <a asp-action="Edit">Reschedule</a> |   @*asp-route-id="@item.PhotoID*@
+                    <a asp-action="Details">Details</a> |
+                    <a asp-action="Delete">Cancel</a>
+                </td>
+            </tr>
+    </tbody>
+</table>
