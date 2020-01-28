@@ -11,7 +11,7 @@ namespace KenkoWebApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<HomeController> _logger;v
 
         public HomeController(ILogger<HomeController> logger)
         {
